@@ -4,37 +4,27 @@
 
 # Write a program that takes a user input string and outputs every second word.
 
+inputSentence = str(input('Please enter a sentence: ')) # Ask user to type a sentence. Explicitly expect a string.
 
+punctuation = [".", ",", "?", "!", ";", ":"] # List of punctuation to strip from input string.
 
-#need to iterate through words in list and delete punctuation
+i=0 # Initialise iterator for loop.
 
-inputSentence = str(input('Please enter a sentence: '))
+for i in range(len(punctuation)): # Run loop for the numebr of items in the punctuation list.
+   inputSentence = inputSentence.replace(punctuation[i],"") # On each iteration strip an item from the punctuation list out of the input string.
 
+# print(inputSentence) # Error check, print input sentence - disabled.
 
-#for x in (".", ",", "?", "!", ";"), ("","","","",""):
- #   inputSentence = inputSentence.replace(*x) ### broken - too many variables
+allWords = inputSentence.split( ) # Split input sentence into a list of strings for each word - SPACE as separator.
 
-print(inputSentence)
+secondWords = allWords[1::2] # Extract every second word into a new list, starting with the second word.
 
-allWords = inputSentence.split( )
+# print(allWords) # Error check, list of all words - disabled.
+# print(secondWords) # Error check, print list of second words - disabled.
 
-#s = "The quick brown fox jumps over the lazy dog"
-#for r in (("brown", "red"), ("lazy", "quick")):
-#    s = s.replace(*r)
+for x in secondWords: # Iterate through the list of second words
+    print (x, end=' ') # Print each word on the same line with a space between each.
 
-secondWords = allWords[1::2]
-
-print(secondWords)
-print(allWords)
-
-for x in secondWords:
-    print (x)
-
-#outputSentence
-#for x in allWords
-
-
-#print(inputSentence.split( ))
 
 
 
