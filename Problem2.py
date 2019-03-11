@@ -5,10 +5,10 @@
 # Write a program that outputs whether or not today is a day that begins with the letter T.
 
 # Import datetime module
-import datetime
+import datetime as dt
 
 # Generate current date and time
-now = datetime.datetime.now()
+now = dt.datetime.now()
 
 # Extract Day from datetime as a string
 Day = now.strftime("%a")

@@ -4,23 +4,26 @@
 
 # Write a program that outputs today’s date and time in the format ”Monday, January 10th 2019 at 1:15pm”.
 
-import datetime
+from datetime import datetime as dt
 
-todaysDate = datetime.datetime.now()
-print(todaysDate) 
+i = dt.now()
+
+#f"{todaysDateTime.strftime("%A, %B %d")}"
+
+#dateNow = todaysDateTime.strftime("%A, %B %d")) 
+
+#timeNow = todaysDateTime.strftime("%I:%M%p")) 
+
+def suffix(d):
+    if d in (1, 21, 31):
+        return "st"    
+    elif d in (2, 22):
+        return "nd"
+    elif d in (3, 23):
+        return "rd"    
+    else:
+        return "th"
 
 
-if todaysDate.strftime("%d") in (1, 21, 31):
-    suffix = "st"
+print(f'{i.strftime("%A, %B %d")}{suffix(i.day)} {i.year} at {i.strftime("%I:%M%p")}')
 
-elif todaysDate.strftime("%d") in (2, 22):
-    suffix = "nd"
-
-elif todaysDate.strftime("%d") in (3, 23):
-    suffix = "rd"    
-
-else:
-    suffix = "th"
-
-print(todaysDate.strftime("%A, %B %d %Y at %I:%M%p"))
-f(todaysDate.strftime("%A, %B %d {suffix} %Y at %I:%M%p")) #repair f string implementation
