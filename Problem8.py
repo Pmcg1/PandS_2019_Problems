@@ -4,17 +4,11 @@
 
 # Write a program that outputs today’s date and time in the format ”Monday, January 10th 2019 at 1:15pm”.
 
-from datetime import datetime as dt
+from datetime import datetime as dt # import datetime module
 
-i = dt.now()
+i = dt.now() # current datetime is set as value of i
 
-#f"{todaysDateTime.strftime("%A, %B %d")}"
-
-#dateNow = todaysDateTime.strftime("%A, %B %d")) 
-
-#timeNow = todaysDateTime.strftime("%I:%M%p")) 
-
-def suffix(d):
+def suffix(d): # if statement to set correct suffix for the date
     if d in (1, 21, 31):
         return "st"    
     elif d in (2, 22):
@@ -23,7 +17,6 @@ def suffix(d):
         return "rd"    
     else:
         return "th"
-
 
 print(f'{i.strftime("%A, %B %d")}{suffix(i.day)} {i.year} at {i.strftime("%I:%M%p")}')
 
