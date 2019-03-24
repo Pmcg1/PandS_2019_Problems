@@ -14,13 +14,13 @@ if i > 0:
 
     else: # If input number isnt '1' then the for loop is initiated
 
-        for j in range(2, i):
-            if (i % j) == 0:
+        for j in range(2, i): # For-Else loop initiated starting at 2 and ending when the iterator equals i
+            if (i % j) == 0: # Check to see if any facotrs other than 1 and i exist
                 print("That is not a prime")
-                break
+                break # Break out of for-else loop if number is found to not be a prime
 
         else:
-            print("That is a prime")
+            print("That is a prime") # Prints only when all iterations are complete and no factors other than 1 and i have been found
 
 else:
     print("That is not a positive integer")
