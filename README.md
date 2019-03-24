@@ -28,6 +28,7 @@ sum of all numbers between one and that number.
 
 ### Solution
 [Problem1.py]
+
 A user input is read from the command prompt ('Input any positive integer: '), explicitly declared as an integer and stored as the variable 'i'.
 Another variable, 'j' is initialised as 0.
 
