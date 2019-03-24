@@ -45,6 +45,7 @@ letter T. An example of running this program on a Thursday is as follows.
 
 ### Solution
 [Problem2.py](Problem2.py)
+
 Datetime module is imported to allow access to its functions.
 The current date and time is assigned to a variable 'now', and the day is extracted from this using strftime.
 
@@ -60,6 +61,7 @@ by 6 but not 12.
 
 ### Solution
 [Problem3.py](Problem3.py)
+
 This problem is solved using a while loop to iterate through the given range.
 
 An initial value of 1000 is assigned to the iterator and the while loop runs until this reached 10000. On each iteration it uses an if statement to check to conditions (with the binary operator 'and'). The remainder of the iterator value divided by 6 is checked to make sure that it is true, and the remainder of the iterator divided by 12 is checked to make sure that it is false.
@@ -77,6 +79,7 @@ it by three and add one. Have the program end if the current value is one.
 
 ### Solution
 [Problem4.py](Problem4.py)
+
 Similarly to Problem 1, the user is asked to input a positive integer. The same if statement from Problem 1 is used to assess if the integer is positive.
 
 The calculations are implemented as a while loop embedded into the if statement that will iterate until the value being assessed is equal to 1.
@@ -93,19 +96,21 @@ whether or not the number is a prime.
 
 ### Solution
 [Problem5.py](Problem5.py)
+
 Similarly to Problem 1, the user is asked to input a positive integer. The same if statement from Problem 1 is used to assess if the integer is positive.
 
 A nested if statement then checks whether the number is equal to 1 or not. Where 1 has been input, the programme ends and returns "That is a prime" to the user.
 Where the number is not 1, a for-else loop is used to assess it. This iterates over the range [2, Input Number] as a prime must only have factors of itself and 1. An if statement inside the for loop checks if the input number divided by the current iterator number is an even number. IF this is true, then the number is not a prime and the programme will print this. Additionally it uses 'break' to exit the loop. The else portion of the loop allows the situation where the number is a prime to be printed.
 
 ### References
-*[Programiz](https://www.programiz.com/python-programming/examples/prime-number)
+* [Programiz](https://www.programiz.com/python-programming/examples/prime-number)
 
 ## Problem 6
 > Write a program that takes a user input string and outputs every second word.
 
 ### Solution
 [Problem6.py](Problem6.py)
+
 The user is requested to type a sentence, which is stored as a string (inputSentence). It is explicitly declared as a string.
 
 A list of punctuation is included as a list (punctuation). A for loop is run for the number of items in the punctuation list. On each iteration, the input sentence is checked for an element in the punctuation list and if found it is replaced with an empty character using 'replace()'.
@@ -115,10 +120,8 @@ A new list is created that takes as its elements every second word from the prev
 
 A for loop is used to print out the final list to give it the appearance of a single string. It iterates through each word in the list and prints it, using the `end=' '` parameter to prevent newlines from being created.
 
-
-
 ### References
-[Tutorials Point](https://www.tutorialspoint.com/python/string_replace.htm)
+* [Tutorials Point](https://www.tutorialspoint.com/python/string_replace.htm)
 
 ## Problem 7
 > Write a program that that takes a positive floating point number as input and outputs
@@ -126,6 +129,7 @@ an approximation of its square root.
 
 ### Solution
 [Problem7.py](Problem7.py)
+
 
 
 ### References
@@ -139,6 +143,7 @@ an approximation of its square root.
 [Problem8.py](Problem8.py)
 
 
+
 ### References
 
 
@@ -150,20 +155,22 @@ should take the filename from an argument on the command line.
 [Problem9.py](Problem9.py)
 
 
+
 ### References
 
 
 ## Problem 10
-> Write a program that displays a plot of the functions x, x2 and 2x in the range [0, 4].
+> Write a program that displays a plot of the functions x, x^2 and 2^x in the range [0, 4].
 
 ### Solution
 [Problem10.py](Problem10.py)
 
 
+
 ### References
 
 
-##General References
+## General References
 
 * [Stack Overflow](https://stackoverflow.com/)
 * [W3 Schools](https://www.w3schools.com/python/default.asp)
