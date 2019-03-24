@@ -160,7 +160,7 @@ should take the filename from an argument on the command line.
 
 
 ## Problem 10
-> Write a program that displays a plot of the functions x, x^2 and 2^x in the range [0, 4].
+> Write a program that displays a plot of the functions x, x<sup>2</sup> and 2<sup>x</sup> in the range [0, 4].
 
 ### Solution
 [Problem10.py](Problem10.py)
