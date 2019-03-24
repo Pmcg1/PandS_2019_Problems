@@ -7,7 +7,7 @@ This contains my solutions to the Programming and Scripting 2019 Problem Set.
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see [LICENSE.md] for details.
+This project is licensed under the Apache License 2.0 - see [LICENSE.md](PandS_2019_Problems/LICENSE) for details.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ The Anaconda Distribution is recommended. It can be downloaded from [here](https
 sum of all numbers between one and that number.
 
 ### Solution
-[Problem1.py]
+[Problem1.py](PandS_2019_Problems/Problem1.py)
 
 A user input is read from the command prompt ('Input any positive integer: '), explicitly declared as an integer and stored as the variable 'i'.
 Another variable, 'j' is initialised as 0.
