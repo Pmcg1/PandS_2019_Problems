@@ -9,19 +9,18 @@ i = int(input('Please enter a positive integer: '))
 
 # Check that integer is a positive integer
 if i > 0:
-    if i == 1:
+    if i == 1: # Simple check for '1'
         print("That is a prime")
 
-    else:
+    else: # If input number isnt '1' then the for loop is initiated
 
-        for j in range (2, i):
-            if i % j == 0:
-                print("That is not a prime") # This isn't checking properly - re-write!!!!
+        for j in range(2, i):
+            if (i % j) == 0:
+                print("That is not a prime")
                 break
 
-            else:
-                print("That is a prime")
-                break
+        else:
+            print("That is a prime")
 
 else:
     print("That is not a positive integer")

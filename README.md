@@ -93,9 +93,13 @@ whether or not the number is a prime.
 
 ### Solution
 [Problem5.py](Problem5.py)
+Similarly to Problem 1, the user is asked to input a positive integer. The same if statement from Problem 1 is used to assess if the integer is positive.
 
+A nested if statement then checks whether the number is equal to 1 or not. Where 1 has been input, the programme ends and returns "That is a prime" to the user.
+Where the number is not 1, a for-else loop is used to assess it. This iterates over the range [2, Input Number] as a prime must only have factors of itself and 1. An if statement inside the for loop checks if the input number divided by the current iterator number is an even number. IF this is true, then the number is not a prime and the programme will print this. Additionally it uses 'break' to exit the loop. The else portion of the loop allows the situation where the number is a prime to be printed.
 
 ### References
+*[Programiz](https://www.programiz.com/python-programming/examples/prime-number)
 
 ## Problem 6
 > Write a program that takes a user input string and outputs every second word.
