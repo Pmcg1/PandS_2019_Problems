@@ -4,48 +4,15 @@
 
 # Write a program that displays a plot of the functions x, x2 and 2x in the range [0, 4].
 
-import matplotlib.pyplot as plt
-import numpy as np
+import matplotlib.pyplot as plt # Import pyplot for plotting graphs
+import numpy as np # Import numpy for convenient manipulation of lists
 
-valueRange = list(range(0,4))
-print(valueRange)
-'''
-plt.figure(1, figsize=(18, 5))
-
-plt.subplot(131)
-plt.plot(valueRange, valueRange, color='red')
-plt.xlabel('x')
-plt.ylabel('x')
-plt.title("x vs x")
-plt.grid(True)
-
-plt.subplot(132)
-plt.plot(valueRange, np.square(valueRange), color='green')
-plt.xlabel('x')
-plt.ylabel('$x^2$')
-plt.title("x vs $x^2$")
-plt.grid(True)
-
-plt.subplot(133)
-plt.plot(valueRange, np.power(2,valueRange), color='blue')
-plt.xlabel('x')
-plt.ylabel('$2^x$')
-plt.title("x vs $2^x$")
-plt.grid(True)
-
-plt.suptitle('Problem 10')
-plt.show()
-'''
-
-
-fig, ax = plt.subplots()
-plt.plot(valueRange, valueRange, label='y = x', color='red')
-plt.plot(valueRange, np.square(valueRange), label='y = $x^2$', color='green')
-plt.plot(valueRange, np.power(2,valueRange), label='y = $2^x$', color='blue')
-plt.xlabel('x')
-plt.ylabel('y')
-plt.grid(True)
-
-ax.legend()
-plt.suptitle('Problem 10')
-plt.show()
+plt.plot(range(0,4), range(0,4), label='y = x', color='red', marker = 4) # plot y = x for the given range and colour it red
+plt.plot(range(0,4), np.square(range(0,4)), label='y = $x^2$', color='green', marker = 6) # plot y = x^2 for the given range (using numpy) and colour it green
+plt.plot(range(0,4), np.power(2,range(0,4)), label='y = $2^x$', color='blue', marker = 7) # plot y = 2^x for the given range (using numpy) and colour it blue
+plt.xlabel('x') # Label x-axis
+plt.ylabel('y') # Label x-axis
+plt.grid(True) # Display grid
+plt.legend() # Display legend
+plt.suptitle('Plot of the functions x, $x^2$ and $2^x$ in the range [0, 4]') # Plot title
+plt.show() # Generate the plot
