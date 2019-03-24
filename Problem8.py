@@ -6,7 +6,7 @@
 
 from datetime import datetime as dt # import datetime module
 
-i = dt.now() # current datetime is set as value of i
+i = dt.today() # current datetime is set as value of i
 
 def suffix(d): # if statement to set correct suffix for the date
     if d in (1, 21, 31):
