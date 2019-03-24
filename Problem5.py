@@ -16,19 +16,12 @@ if i > 0:
 
         for j in range (2, i):
             if i % j == 0:
-                print("That is not a prime")
+                print("That is not a prime") # This isn't checking properly - re-write!!!!
                 break
 
             else:
                 print("That is a prime")
                 break
 
-    
-
 else:
     print("That is not a positive integer")
-
-
-
-
-

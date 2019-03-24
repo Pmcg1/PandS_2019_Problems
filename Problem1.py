@@ -11,7 +11,7 @@ i = int(input('Input any positive integer: '))
 j = 0
 
 # if a positive integer is detected, print result of while loop
-if i >= 0:
+if i > 0:
     while i > 0:  # repeat loop as long as i is a minimum of 1
         j = j + i # updated j by adding current value of i
         i = i - 1 # decrement i by 1 until it reaches 1

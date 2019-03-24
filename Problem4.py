@@ -25,5 +25,6 @@ if i > 0:
 
     print (int(i)) # Print the final result of the calculations
 
+
 else:
     print("That is not a positive integer")
