@@ -106,10 +106,19 @@ Where the number is not 1, a for-else loop is used to assess it. This iterates o
 
 ### Solution
 [Problem6.py](Problem6.py)
+The user is requested to type a sentence, which is stored as a string (inputSentence). It is explicitly declared as a string.
+
+A list of punctuation is included as a list (punctuation). A for loop is run for the number of items in the punctuation list. On each iteration, the input sentence is checked for an element in the punctuation list and if found it is replaced with an empty character using 'replace()'.
+
+The input sentence is not split into a list of strings for each word, using spaces as separators.
+A new list is created that takes as its elements every second word from the previous list.
+
+A for loop is used to print out the final list to give it the appearance of a single string. It iterates through each word in the list and prints it, using the `end=' '` parameter to prevent newlines from being created.
+
 
 
 ### References
-
+[Tutorials Point](https://www.tutorialspoint.com/python/string_replace.htm)
 
 ## Problem 7
 > Write a program that that takes a positive floating point number as input and outputs
